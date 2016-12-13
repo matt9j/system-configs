@@ -28,6 +28,7 @@
 ;;EMACS setup
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
+(add-hook 'prog-mode-hook 'show-paren-mode)
 
 ;;GUI Setup
 (tool-bar-mode 0)
