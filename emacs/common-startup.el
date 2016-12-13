@@ -259,3 +259,6 @@
 
 
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+
+;; Setup javascript formatting
+(setq js-indent-level 2)
