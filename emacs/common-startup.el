@@ -140,6 +140,10 @@
 (global-set-key (kbd "<C-mouse-4>") 'scroll-down-line)
 (global-set-key (kbd "<C-mouse-5>") 'scroll-up-line)
 
+;; Latex Preview
+;; Available in elpa `M-x package-install latex-preview-pane`
+;;(latex-preview-pane-enable)
+
 ;; CEDIT Setup
 ;;(load-file "/home/mwjohnson/customization/emacs/cedet-1.1/common/cedet.el")
 (global-ede-mode 1)                      ; Enable the Project management system
