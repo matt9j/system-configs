@@ -1,0 +1,46 @@
+;;; Add my system-config bin directory to the path
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/") t)
+
+(setenv "PATH" (concat (getenv "PATH") ":/home/matt9j/system-configs/bin"))
+    (setq exec-path (append exec-path '("/home/matt9j/system-configs/bin")))
+
+;;; Load shared common files
+(add-to-list 'load-path "~/system-configs/emacs")
+(load "~/system-configs/emacs/common-startup.el")
+
+;;; Set the editor color theme
+;;(load "~/system-configs/emacs/better-tango-dark-theme.el")
+
+;;; Increase the font size for new dense laptop screen.
+(set-face-attribute 'default (selected-frame) :height 120)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (darcula)))
+ '(custom-safe-themes
+   (quote
+    ("60b6fc371e0791ee004f36f2e70408d3fa3af1c4d1e16a47f3305ce4b95e4fa8" default)))
+ '(doc-view-continuous t)
+ '(indent-tabs-mode nil)
+ '(package-selected-packages
+   (quote
+    (systemd markdown-mode yaml-mode jekyll-modes darcula-theme magit latex-preview-pane company-go auctex)))
+ '(tab-stop-list nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+(put 'upcase-region 'disabled nil)

@@ -1,0 +1,8 @@
+[user]
+	name = Matt Johnson
+	email = matt9j@cs.washington.edu
+[core]
+	excludesfile = /home/matt9j/.gitignore_global
+	editor = emacsclient
+[push]
+	default = simple
