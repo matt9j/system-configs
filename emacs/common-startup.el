@@ -30,6 +30,13 @@
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 (add-hook 'prog-mode-hook 'show-paren-mode)
 
+;;Disable the bell
+(setq ring-bell-function 'ignore)
+
+;;Store backups to temp
+(setq backup-directory-alist
+      `((".*" . ,"/tmp")))
+
 ;;GUI Setup
 (tool-bar-mode 0)
 (menu-bar-mode 0)
@@ -70,7 +77,8 @@
 (add-hook 'python-mode-hook 'flymake-mode)
 
 ;;Start emacs server so new windows open in existing frame
-(server-start)
+(load "server")
+(unless (server-running-p) (server-start))
 ;;disable server close buffer confirm:
 ;;(remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
 
