@@ -108,6 +108,8 @@
   :ensure t
   :defer t
   )
+(use-package tex :ensure auctex)
+
 (use-package latex-preview-pane
   :ensure t
   :defer t
