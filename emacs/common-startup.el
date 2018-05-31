@@ -61,8 +61,7 @@
 (setq whitespace-line-column 80
       whitespace-style '(face tabs trailing lines-tail))
 
-;; activate minor whitespace mode when in c++, python, rest, mode
-;(add-hook 'c++-mode-hook 'whitespace-mode)
+;; activate whitespace modes when appropriate
 (add-hook 'prog-mode-hook 'whitespace-mode)
 (add-hook 'rst-mode-hook 'whitespace-mode)
 
@@ -73,8 +72,6 @@
 ;;Start emacs server so new windows open in existing frame
 (load "server")
 (unless (server-running-p) (server-start))
-;;disable server close buffer confirm:
-;;(remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
 
 (require 'ido)
 (ido-mode t)
