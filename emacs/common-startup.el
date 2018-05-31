@@ -33,7 +33,7 @@
   :ensure t
   :config
   ;; your preferred main font face here
-  (set-frame-font "Monospace-11"))
+  (set-frame-font "Monospace-12"))
 
 ;;EMACS setup
 (add-hook 'text-mode-hook 'flyspell-mode)
