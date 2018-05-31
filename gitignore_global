@@ -1,4 +1,6 @@
-# Emacs Temp Files #
-*~
+# Emacs temporary files
 *.bak
 *.swp
+
+# Intellij ide directory
+*.idea/

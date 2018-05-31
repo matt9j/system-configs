@@ -2,7 +2,7 @@
 	name = Matt Johnson
 	email = matt9j@cs.washington.edu
 [core]
-	excludesfile = /home/matt9j/.gitignore_global
-	editor = emacsclient
+	excludesfile = /home/matt9j/system-configs/gitignore_global
+	editor = emacsclient -t
 [push]
 	default = simple
