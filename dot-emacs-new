@@ -7,7 +7,7 @@
 (package-initialize)
 
 (add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (setenv "PATH" (concat (getenv "PATH") ":/home/matt9j/system-configs/bin"))
     (setq exec-path (append exec-path '("/home/matt9j/system-configs/bin")))

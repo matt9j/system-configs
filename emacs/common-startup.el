@@ -106,11 +106,6 @@
      (format "ctags -f %s -e -R %s" path-to-ctags (directory-file-name dir-name)))
   )
 
-;;package installer
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
-
  ; Outline-minor-mode key map
  (define-prefix-command 'cm-map nil "Outline-")
  ; HIDE
