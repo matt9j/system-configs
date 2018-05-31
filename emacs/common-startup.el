@@ -162,17 +162,6 @@
 ;; Available in elpa `M-x package-install latex-preview-pane`
 ;;(latex-preview-pane-enable)
 
-;; CEDIT Setup
-;;(load-file "/home/mwjohnson/customization/emacs/cedet-1.1/common/cedet.el")
-(global-ede-mode 1)                      ; Enable the Project management system
-;;(global-semantic-highlight-func-mode 1)
-;;(global-semantic-show-unmatched-syntax-mode 1)
-;;(global-srecode-minor-mode 1)            ; Enable template insertion menu
-;;(global-semantic-idle-scheduler-mode 1)
-;;(global-semantic-idle-local-symbol-highlight-mode 1)
-;;(global-cedet-m3-minor-mode 1)           ; Enable right click context menu
-;;(global-semantic-idle-summary-mode 1)
-
 (defun my-c-mode-font-lock-if0 (limit)
   (save-restriction
     (widen)
