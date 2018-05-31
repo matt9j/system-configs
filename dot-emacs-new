@@ -31,9 +31,6 @@
     ("60b6fc371e0791ee004f36f2e70408d3fa3af1c4d1e16a47f3305ce4b95e4fa8" default)))
  '(doc-view-continuous t)
  '(indent-tabs-mode nil)
- '(package-selected-packages
-   (quote
-    (systemd markdown-mode yaml-mode jekyll-modes darcula-theme magit latex-preview-pane company-go auctex)))
  '(tab-stop-list nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

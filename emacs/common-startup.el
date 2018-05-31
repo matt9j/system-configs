@@ -1,13 +1,6 @@
 ;; Note on a fresh system install will need to install use-package
 ;;M-x package-refresh-contents RET M-x package-install RET use-package RET
 
-;;Set the color scheme
-(use-package darcula-theme
-  :ensure t
-  :config
-  ;; your preferred main font face here
-  (set-frame-font "Monospace-12"))
-
 ;;GUI Setup
 (tool-bar-mode 0)
 (menu-bar-mode 0)
@@ -72,3 +65,50 @@
 
 ;; Setup javascript formatting
 (setq js-indent-level 2)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Ensure packages are installed
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Set the color scheme
+(use-package darcula-theme
+  :ensure t
+  :config
+  ;; your preferred main font face here
+  (set-frame-font "Monospace-12"))
+
+;; Git Support
+(use-package magit
+  :ensure t
+  )
+;; Useful edit modes
+(use-package systemd
+  :ensure t
+  :defer t
+  )
+(use-package markdown-mode
+  :ensure t
+  :defer t
+  )
+(use-package yaml-mode
+  :ensure t
+  :defer t
+  )
+(use-package jekyll-modes
+  :ensure t
+  :defer t
+  )
+(use-package company-go
+  :ensure t
+  :defer t
+  )
+
+;; Latex support
+(use-package auctex
+  :ensure t
+  :defer t
+  )
+(use-package latex-preview-pane
+  :ensure t
+  :defer t
+  )
