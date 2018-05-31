@@ -1,6 +1,0 @@
-# http://www.delorie.com/gnu/docs/screen/screen_138.html
-shelltitle ''
-autodetach on
-#caption always "%{= kwyk}%H %=[%l]"
-hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%< %=[%c:%s, %D, %d/%m/%y]"
-defscrollback 999999
