@@ -83,13 +83,6 @@
 (require 'revbufs)
 (global-set-key [f12] (quote revbufs))
 
-(defun create-tags (dir-name)
-    "Create tags file."
-    (interactive "DDirectory: ")
-    (shell-command
-     (format "ctags -f %s -e -R %s" path-to-ctags (directory-file-name dir-name)))
-  )
-
  ; Outline-minor-mode key map
  (define-prefix-command 'cm-map nil "Outline-")
  ; HIDE
