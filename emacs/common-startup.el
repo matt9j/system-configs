@@ -106,12 +106,6 @@
      (format "ctags -f %s -e -R %s" path-to-ctags (directory-file-name dir-name)))
   )
 
-;;Outline Magic plugin
-(eval-after-load 'outline
-  '(progn
-    (require 'outline-magic)
-    (define-key outline-minor-mode-map (kbd "<C-tab>") 'outline-cycle)))
-
 ;;package installer
 (require 'package)
 (add-to-list 'package-archives
@@ -141,12 +135,6 @@
  (global-set-key "\M-o" cm-map)
 
  (define-key cm-map "\M-o" 'outline-minor-mode)       ; Backward - same level
-
-;;Outline key re-bindings to use arrows
-(add-hook 'outline-mode-hook 'my-outline-easy-bindings)
-(add-hook 'outline-minor-mode-hook 'my-outline-easy-bindings)
-(defun my-outline-easy-bindings ()
-(require 'outline-mode-easy-bindings nil t))
 
 ;;Smooth Scrolling
 (require 'smooth-scrolling)
