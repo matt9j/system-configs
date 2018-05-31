@@ -16,9 +16,6 @@
 (add-to-list 'load-path "~/system-configs/emacs")
 (load "~/system-configs/emacs/common-startup.el")
 
-;;; Set the editor color theme
-;;(load "~/system-configs/emacs/better-tango-dark-theme.el")
-
 ;;; Increase the font size for new dense laptop screen.
 (set-face-attribute 'default (selected-frame) :height 120)
 
