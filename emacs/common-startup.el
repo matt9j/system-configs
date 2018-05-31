@@ -95,11 +95,6 @@
 (require 'ido)
 (ido-mode t)
 
-;;Enable Syntax Highlighting for Jam files
-(require 'jam-mode)
-(add-to-list 'auto-mode-alist '("\\.jam\\'" . jam-mode))
-(add-to-list 'auto-mode-alist '("\\Jamroot\\'" . jam-mode))
-
 ;;Revbufs setup and keybinding
 (require 'revbufs)
 (global-set-key [f12] (quote revbufs))
