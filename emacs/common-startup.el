@@ -54,6 +54,7 @@
 (line-number-mode 1)
 (column-number-mode 1)
 (setq inhibit-startup-screen t)
+(put 'upcase-region 'disabled nil)
 
 ;; display only tails of lines longer than 80 columns, tabs and
 ;; trailing whitespaces
