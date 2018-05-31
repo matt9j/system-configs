@@ -1,3 +1,6 @@
+;; Note on a fresh system install will need to install use-package
+;;M-x package-refresh-contents RET M-x package-install RET use-package RET
+
 ;; Change cursor color according to mode; inspired by
 ;; http://www.emacswiki.org/emacs/ChangingCursorDynamically
  (setq djcb-read-only-color       "pink")
@@ -24,6 +27,13 @@
                (setq cursor-type djcb-normal-cursor-type)))
  )
 (add-hook 'post-command-hook 'djcb-set-cursor-according-to-mode)
+
+;;Set the color scheme
+(use-package darcula-theme
+  :ensure t
+  :config
+  ;; your preferred main font face here
+  (set-frame-font "Monospace-11"))
 
 ;;EMACS setup
 (add-hook 'text-mode-hook 'flyspell-mode)
