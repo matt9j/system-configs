@@ -19,6 +19,8 @@
 ;; Activate whitespace modes when appropriate
 (add-hook 'prog-mode-hook 'whitespace-mode)
 (add-hook 'rst-mode-hook 'whitespace-mode)
+(add-hook 'yaml-mode-hook 'whitespace-mode)
+(add-hook 'markdown-mode-hook 'whitespace-mode)
 
 ;; Setup Flyspell
 (add-hook 'text-mode-hook 'flyspell-mode)
