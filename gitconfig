@@ -6,12 +6,10 @@
 	editor = emacsclient -t
 [push]
 	default = simple
-[difftool "kdiff3"]
-    trustExitCode = false
 [difftool]
     prompt = false
 [diff]
-    tool = kdiff3
+    tool = meld
 [mergetool "kdiff3"]
     cmd = kdiff3 $BASE $LOCAL $REMOTE -o $MERGED
     trustExitCode = false
