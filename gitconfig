@@ -11,7 +11,7 @@
 [diff]
     tool = meld
 [mergetool "kdiff3"]
-    cmd = kdiff3 $BASE $LOCAL $REMOTE -o $MERGED
+    cmd = kdiff3 $LOCAL $REMOTE $BASE -o $MERGED
     trustExitCode = false
 [mergetool]
     keepBackup = false
