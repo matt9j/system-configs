@@ -1,6 +1,7 @@
 [user]
 	name = Matt Johnson
 	email = matt9j@cs.washington.edu
+	signingkey = E7E236117C91A960E179125F6F5585BA0275038A
 [core]
 	excludesfile = /home/matt9j/system-configs/gitignore_global
 	editor = emacsclient -t
@@ -11,7 +12,7 @@
 [diff]
     tool = meld
 [mergetool "kdiff3"]
-    cmd = kdiff3 $LOCAL $REMOTE $BASE -o $MERGED
+    cmd = kdiff3 $BASE $LOCAL $REMOTE -o $MERGED
     trustExitCode = false
 [mergetool]
     keepBackup = false
