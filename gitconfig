@@ -18,3 +18,5 @@
     keepBackup = false
 [merge]
     tool = kdiff3
+[pull]
+    ff = only
