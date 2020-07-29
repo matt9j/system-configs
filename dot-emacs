@@ -34,7 +34,7 @@
  '(latex-preview-pane-multifile-mode (quote auctex))
  '(package-selected-packages
    (quote
-    (cargo flycheck-rust protobuf-mode puppet-mode yaml-mode use-package systemd markdown-mode magit latex-preview-pane jekyll-modes darcula-theme company-go auctex)))
+    (php-mode cargo flycheck-rust protobuf-mode puppet-mode yaml-mode use-package systemd markdown-mode magit latex-preview-pane jekyll-modes darcula-theme company-go auctex)))
  '(tab-stop-list nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
