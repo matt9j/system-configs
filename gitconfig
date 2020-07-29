@@ -1,12 +1,12 @@
 [user]
-	name = Matt Johnson
-	email = matt9j@cs.washington.edu
-	signingkey = E7E236117C91A960E179125F6F5585BA0275038A
+    name = Matt Johnson
+    email = matt9j@cs.washington.edu
+    signingkey = E7E236117C91A960E179125F6F5585BA0275038A
 [core]
-	excludesfile = /home/matt9j/system-configs/gitignore_global
-	editor = emacsclient -t
+    excludesfile = /home/matt9j/system-configs/gitignore_global
+    editor = emacsclient -t
 [push]
-	default = simple
+    default = simple
 [difftool]
     prompt = false
 [diff]
