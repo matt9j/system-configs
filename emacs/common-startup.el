@@ -83,6 +83,8 @@
 (use-package magit
   :ensure t
   )
+(require 'git-commit)
+
 ;; Useful edit modes
 (use-package systemd
   :ensure t
@@ -93,10 +95,6 @@
   :defer t
   )
 (use-package yaml-mode
-  :ensure t
-  :defer t
-  )
-(use-package jekyll-modes
   :ensure t
   :defer t
   )
@@ -112,7 +110,3 @@
   )
 (use-package tex :ensure auctex)
 
-(use-package latex-preview-pane
-  :ensure t
-  :defer t
-  )

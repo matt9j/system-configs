@@ -9,6 +9,12 @@
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
+(require 'package)
+(dolist (package '(use-package))
+   (unless (package-installed-p package)
+       (package-refresh-contents)
+       (package-install package)))
+
 (setenv "PATH" (concat (getenv "PATH") ":/home/matt9j/system-configs/bin"))
     (setq exec-path (append exec-path '("/home/matt9j/system-configs/bin")))
 
@@ -16,9 +22,7 @@
 (add-to-list 'load-path "~/system-configs/emacs")
 (load "~/system-configs/emacs/common-startup.el")
 
-; jekyll modes
-(add-to-list 'auto-mode-alist '("\\.md$" . jekyll-markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.html" . jekyll-html-mode))
+(add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -29,10 +33,9 @@
  '(custom-safe-themes
    '("60b6fc371e0791ee004f36f2e70408d3fa3af1c4d1e16a47f3305ce4b95e4fa8" default))
  '(doc-view-continuous t)
- '(indent-tabs-mode nil)
  '(latex-preview-pane-multifile-mode 'auctex)
  '(package-selected-packages
-   '(php-mode cargo flycheck-rust protobuf-mode puppet-mode yaml-mode use-package systemd markdown-mode magit latex-preview-pane jekyll-modes darcula-theme company-go auctex))
+   '(erlang php-mode cargo flycheck-rust protobuf-mode puppet-mode yaml-mode use-package systemd markdown-mode magit darcula-theme company-go auctex))
  '(tab-stop-list nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -40,3 +43,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(setq-default indent-tabs-mode nil)
