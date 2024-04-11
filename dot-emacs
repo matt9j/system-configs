@@ -25,16 +25,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (darcula)))
+ '(custom-enabled-themes '(darcula))
  '(custom-safe-themes
-   (quote
-    ("60b6fc371e0791ee004f36f2e70408d3fa3af1c4d1e16a47f3305ce4b95e4fa8" default)))
+   '("60b6fc371e0791ee004f36f2e70408d3fa3af1c4d1e16a47f3305ce4b95e4fa8" default))
  '(doc-view-continuous t)
  '(indent-tabs-mode nil)
- '(latex-preview-pane-multifile-mode (quote auctex))
+ '(latex-preview-pane-multifile-mode 'auctex)
  '(package-selected-packages
-   (quote
-    (php-mode cargo flycheck-rust protobuf-mode puppet-mode yaml-mode use-package systemd markdown-mode magit latex-preview-pane jekyll-modes darcula-theme company-go auctex)))
+   '(php-mode cargo flycheck-rust protobuf-mode puppet-mode yaml-mode use-package systemd markdown-mode magit latex-preview-pane jekyll-modes darcula-theme company-go auctex))
  '(tab-stop-list nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
