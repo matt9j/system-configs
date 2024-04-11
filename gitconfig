@@ -5,18 +5,33 @@
 [core]
     excludesfile = /home/matt9j/system-configs/gitignore_global
     editor = emacsclient -t
+    autocrlf = input
+
+[init]
+    defaultBranch = main
+[credential]
+    helper = store
+    helper = cache --timeout 30000
+
 [push]
     default = simple
-[difftool]
-    prompt = false
-[diff]
-    tool = meld
-[mergetool "kdiff3"]
-    cmd = kdiff3 $BASE $LOCAL $REMOTE -o $MERGED
-    trustExitCode = false
-[mergetool]
-    keepBackup = false
-[merge]
-    tool = kdiff3
 [pull]
     ff = only
+
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+
+[merge]
+    tool = meld
+[mergetool]
+    keepBackup = false
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+    trustExitCode = false
+[mergetool "meld-base"]
+    cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+    trustExitCode = false
